@@ -169,6 +169,15 @@
   .brand{max-width:calc(100% - 54px);overflow:visible}
   .brand-logo{width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important}
 }
+
+.calc-link.coming-soon{cursor:default!important;opacity:.72}
+.calc-link.coming-soon:hover{background:transparent!important;color:inherit!important}
+.calc-link.coming-soon .soon-label{margin-left:auto;font-size:10px;font-weight:800;letter-spacing:.04em;color:#667085;background:#eef2f7;border:1px solid #dfe5ee;border-radius:999px;padding:3px 7px}
+
+.drawer-item.coming-soon{cursor:default!important;opacity:.78}
+.drawer-item.coming-soon:hover{background:transparent!important}
+.drawer-item.coming-soon .soon-label{margin-left:auto;align-self:center;flex:0 0 auto;font-size:10px;line-height:1;font-weight:850;letter-spacing:.04em;color:#667085;background:#eef2f7;border:1px solid #dfe5ee;border-radius:999px;padding:5px 8px}
+@media(max-width:700px){.drawer-item.coming-soon .soon-label{font-size:9px;padding:4px 7px}}
 </style>
 </head>
 <body>
@@ -193,9 +202,9 @@
 <nav class="drawer-list" aria-label="All Crypto Calculators">
 <a class="drawer-item" href="index.html"><span class="drawer-icon">🧮</span><span><strong>Position Size Calculator</strong><small>Size your trade from account risk</small></span></a>
 <a class="drawer-item current" href="crypto-profit-calculator.html"><span class="drawer-icon">📈</span><span><strong>Profit Calculator</strong><small>Calculate PnL, ROI and trading fees</small></span><span class="drawer-current">Current</span></a>
-<a class="drawer-item" href="#coming-soon"><span class="drawer-icon">⚖️</span><span><strong>Risk/Reward Calculator</strong><small>Compare potential risk and reward</small></span></a>
-<a class="drawer-item" href="#coming-soon"><span class="drawer-icon">🔥</span><span><strong>Liquidation Calculator</strong><small>Estimate liquidation price</small></span></a>
-<a class="drawer-item" href="#coming-soon"><span class="drawer-icon">💰</span><span><strong>Funding Calculator</strong><small>Estimate perpetual funding costs</small></span></a>
+<div class="drawer-item coming-soon"><span class="drawer-icon">⚖️</span><span><strong>Risk/Reward Calculator</strong><small>Compare potential risk and reward</small></span><span class="soon-label">Coming soon</span></div>
+<div class="drawer-item coming-soon"><span class="drawer-icon">🔥</span><span><strong>Liquidation Calculator</strong><small>Estimate liquidation price</small></span><span class="soon-label">Coming soon</span></div>
+<div class="drawer-item coming-soon"><span class="drawer-icon">💰</span><span><strong>Funding Calculator</strong><small>Estimate perpetual funding costs</small></span><span class="soon-label">Coming soon</span></div>
 </nav>
 <div class="drawer-secondary" aria-label="Site links">
   <a href="#how">How it works</a>
