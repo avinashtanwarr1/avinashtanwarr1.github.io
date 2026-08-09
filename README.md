@@ -1,9 +1,9 @@
-# TradeRisk Tools V5
+# TradeRisk Tools
 
-The calculator starts completely blank so visitors enter their own values.
+A small collection of browser-based trading calculators.
 
-Reset clears all calculator inputs after confirmation.
+Current tools:
+- Crypto Position Size Calculator
+- Crypto Profit Calculator
 
-The main calculator is self-contained in index.html. Upload all files together when publishing.
-
-Before launch: replace the placeholder email and update robots.txt/sitemap.xml with the final public URL.
+The site is self-contained and can be hosted directly with GitHub Pages.
