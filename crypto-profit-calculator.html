@@ -147,7 +147,12 @@
 <a class="drawer-item" href="#coming-soon"><span class="drawer-icon">⚖️</span><span><strong>Risk/Reward Calculator</strong><small>Compare potential risk and reward</small></span></a>
 <a class="drawer-item" href="#coming-soon"><span class="drawer-icon">🔥</span><span><strong>Liquidation Calculator</strong><small>Estimate liquidation price</small></span></a>
 <a class="drawer-item" href="#coming-soon"><span class="drawer-icon">💰</span><span><strong>Funding Calculator</strong><small>Estimate perpetual funding costs</small></span></a>
-</nav></aside>
+</nav>
+<div class="drawer-secondary">
+  <a href="#how">How it works</a>
+  <a href="#faq">FAQ</a>
+</div>
+</aside>
 
 
 
@@ -209,6 +214,7 @@ function calculate(){const m=parseFloat($("margin").value),l0=parseFloat($("leve
   menu.addEventListener('click',()=>setOpen(true));
   close.addEventListener('click',()=>setOpen(false));
   backdrop.addEventListener('click',()=>setOpen(false));
+  drawer.querySelectorAll('.drawer-secondary a').forEach(a=>a.addEventListener('click',()=>setOpen(false)));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('open'))setOpen(false)});
 })();
 </script>
